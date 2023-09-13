@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212832"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:textColor="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:visibility="gone" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchAutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#455A64"
+            android:backgroundTint="#455A64"
+            android:hint="SEARCH"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/countryListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#455A64"
+        android:baselineAligned="false"
+        android:textColor="#ffffff"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noResultsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No results"
+        android:textColor="#FED36A"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/showAllResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#212832"
+        android:gravity="center_horizontal"
+        android:text="All Results"
+        android:textColor="#FED36A" />
+
+    <Button
+        android:id="@+id/clearHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear History"
+        android:visibility="gone" />
+
+</LinearLayout>
